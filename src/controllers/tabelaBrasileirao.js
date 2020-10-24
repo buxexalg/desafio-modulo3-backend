@@ -1,7 +1,6 @@
 const QueriesJogos = require('../repositories/queriesJogos');
 const Response = require('./response');
 
-
 /**
  * Função responsável por gerenciar a requisição de jogos por rodada. O número da mesma é inserido como um parâmetro de URL.
  */
@@ -156,10 +155,13 @@ const alterarPlacar = async (ctx) => {
 		);
 	}
 
-	const tabelaAlterada = await QueriesJogos.alteraPlacar(id, golsCasa, golsVisitante);
+	const tabelaAlterada = await QueriesJogos.alteraPlacar(
+		id,
+		golsCasa,
+		golsVisitante
+	);
 
 	return Response.sucessoRequisicao(ctx, tabelaAlterada.rows, 200);
-		
 };
 
 module.exports = { obterJogos, obterClassificacao, alterarPlacar };

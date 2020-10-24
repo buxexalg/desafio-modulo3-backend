@@ -9,5 +9,4 @@ server.use(cors());
 server.use(bodyparser());
 server.use(router.routes());
 
-
 server.listen(8081, () => console.log('Rodando!'));

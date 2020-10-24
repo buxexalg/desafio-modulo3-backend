@@ -22,5 +22,4 @@ const falhaRequisicao = (ctx, mensagem, codigoREST = 404) => {
 	};
 };
 
-
-module.exports = {sucessoRequisicao, falhaRequisicao};
+module.exports = { sucessoRequisicao, falhaRequisicao };

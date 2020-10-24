@@ -1,6 +1,5 @@
 const Database = require('../utils/database');
 
-
 /**
  * Função responsável por fazer a query que retorna a senha em hash de um email específico.
  */
