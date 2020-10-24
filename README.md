@@ -60,19 +60,6 @@ Recebe um JSON como entrada contendo email e password e retorna um token de aute
 
 Para rodar o projeto, você precisará ter o Node.js instalado na sua máquina.
 
-### Banco de Dados
-
-A inicialização do banco de dados pode ser feita através da inicialização em node do arquivo `./src/repositories/schema.js` adicionando `up()` na última linha. Para cadastrar as informações de um banco de dados, o arquivo `.env` pode ser utilizado, adicionando as seguintes informações:
-```
-DB_HOST=
-DB_NAME=
-DB_USER=
-DB_PORT=
-DB_PW=
-```
-
-Caso não queira fazer integração com um banco de dados, [um bd de referência](desafio-3-back-cubos-academy.herokuapp.com) pode substituir os endpoints
-
 ### Node
 
 #### Instalação do Node no Windows
@@ -88,6 +75,19 @@ Você pode instalar facilmente o nodejs e o npm com um apt install, basta seguir
 
 #### Outros sistemas operacionais
 Você pode achar mais informações sobre a instalação no site oficial do Node.js (https://nodejs.org/) e no site oficial do NPM.
+
+### Banco de Dados
+
+A inicialização do banco de dados pode ser feita através da inicialização em node do arquivo `./src/repositories/schema.js` adicionando `up()` na última linha. Para cadastrar as informações de um banco de dados, o arquivo `.env` pode ser utilizado, adicionando as seguintes informações:
+```
+DB_HOST=
+DB_NAME=
+DB_USER=
+DB_PORT=
+DB_PW=
+```
+
+Caso não queira fazer integração com um banco de dados, [um bd de referência](desafio-3-back-cubos-academy.herokuapp.com) pode substituir os endpoints
 
 ### Outras dependências
 
