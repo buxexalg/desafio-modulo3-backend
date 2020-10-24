@@ -1,4 +1,4 @@
-# Desafio Módulo 3 de Back-end - Cubos
+# Desafio Módulo 3 de Back-end - Cubos Academy
 
 ## API de gerenciamento da Tabela do Brasileirão 2019.
 
