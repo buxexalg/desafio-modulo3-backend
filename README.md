@@ -63,12 +63,13 @@ Para rodar o projeto, você precisará ter o Node.js instalado na sua máquina.
 ### Banco de Dados
 
 A inicialização do banco de dados pode ser feita através da inicialização em node do arquivo `./src/repositories/schema.js` adicionando `up()` na última linha. Para cadastrar as informações de um banco de dados, o arquivo `.env` pode ser utilizado, adicionando as seguintes informações:
-
-			DB_HOST=
-			DB_NAME=
-			DB_USER=
-			DB_PORT=
-			DB_PW=
+```
+DB_HOST=
+DB_NAME=
+DB_USER=
+DB_PORT=
+DB_PW=
+```
 
 Caso não queira fazer integração com um banco de dados, [um bd de referência](desafio-3-back-cubos-academy.herokuapp.com) pode substituir os endpoints
 
@@ -90,7 +91,7 @@ Você pode achar mais informações sobre a instalação no site oficial do Node
 
 ### Outras dependências
 
-Após instalar o Node, execute `\$ npm install` para instalar as seguintes dependências:
+Após instalar o Node, execute `$ npm install` para instalar as seguintes dependências:
 
 -	[Koa](https://koajs.com/)
 -	[Koa-bodyparser](https://www.npmjs.com/package/koa-bodyparser)
