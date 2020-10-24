@@ -19,12 +19,12 @@ Repositório referente a uma API REST que tem como função administrar um banco
 
 #### Listar jogos por rodada
 
-GET `/jogos/:rodada`
+GET `/jogos/:rodada`\
 Retorna todos os jogos de acordo com o parâmetro de rodada.
 
 #### Editar placar de um jogo
 
-POST `/jogos`
+POST `/jogos`\
 Recebe um JSON como entrada contendo id, golsCasa e golsVisitante e faz a alteração no banco de dados. Todos os um campos são obrigatórios.
 
 ##### Exemplo de JSON
@@ -38,15 +38,23 @@ Recebe um JSON como entrada contendo id, golsCasa e golsVisitante e faz a altera
 
 #### Obter classificação
 
-GET `/classificacao`
+GET `/classificacao`\
 Retorna a classificação final do Brasileirão 2019.
 
 ### Requisição de autenticação
 
 #### Autenticar
 
-POST `/auth`
+POST `/auth`\
 Recebe um JSON como entrada contendo email e password e retorna um token de autenticação. O mesmo é válido por 1 hora.
+
+##### Exemplo de JSON
+```JS
+{
+	"email": "xxxx@xxxxx.com",
+	"password": "123456"
+}
+```
 
 ## Instalação
 
